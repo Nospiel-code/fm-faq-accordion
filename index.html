@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+
+</head>
+
+<body class="relative h-screen grid content-center py-160 px-12 bg-gradient-to-b from-softViolet to-softBlue bg-cover">
+
+  <!-- Box -->
+  <div class="absolute transform left-1/2 top-1/2 -translate-x-144 -translate-y-1/2 z-10">
+    <img class="hidden md:block" src="./images/illustration-box-desktop.svg" alt="box illustration">
+  </div>
+  <!-- Card -->
+  <div
+    class="flex relative flex-col px-6 mx-auto max-w-lg rounded-3xl bg-white md:overflow-hidden md:h-160 md:pr-8 md:px-0 md:my-24 md:max-w-4xl md:flex-row">
+    <!-- Images -->
+
+
+    <div class="imageContainer pb-56 flex-1 md:flex md:flex-col md:justify-center md:items-center md:-translate-x-16">
+      <img class="absolute block left-1/2 -translate-x-1/2 -mt-24 md:hidden" src="./images/illustration-woman-online-mobile.svg"
+        alt="illustration woman">
+      <img class="hidden md:block md:w-full md:max-w-md md:h-auto" src="./images/illustration-woman-online-desktop.svg"
+        alt="illustration woman">
+    </div>
+
+    <!-- Container Heading and Questions -->
+    <div class="flex-1 md:pr-8 md:flex md:flex-col md:justify-center">
+      <!-- Heading -->
+      <h1 class="text-center text-5xl font-bold tracking-tight pb-12 pt-16 md:text-left">FAQ</h1>
+      <!-- Accordion -->
+      <div class="space-y-6">
+        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
+          <div class="flex justify-between items-center pr-3">
+            <h2 class="pb-2 pr-8 cursor-pointer text-lg hover:text-softRed">How many team members can I invite?</h2>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+          </div>
+          <p class="hidden mr-20">You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.</p>
+        </div>
+        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
+          <div class="flex justify-between items-center pr-3">
+            <h2 class="pb-2 cursor-pointer text-lg hover:text-softRed">What is the maximum file upload size?</h2>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+          </div>
+          <p class="hidden mr-20">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </div>
+        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
+          <div class="flex justify-between items-center pr-3">
+            <h2 class="pb-2 cursor-pointer text-lg hover:text-softRed">How do I reset my password?</h2>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+          </div>
+          <p class="hidden mr-20">Click “Forgot password” from the login page or “Change password” from your profile
+            page.
+            A reset link will be emailed to you.</p>
+        </div>
+        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
+          <div class="flex justify-between items-center pr-3">
+            <h2 class="pb-2 cursor-pointer text-lg hover:text-softRed">Can I cancel my subscription?</h2>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+          </div>
+          <p class="hidden mr-20">Yes! Send us a message and we'll process your request no questions asked.</p>
+        </div>
+        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
+          <div class="flex justify-between items-center pr-3">
+            <h2 class="pb-2 cursor-pointer text-lg hover:text-softRed">Do you provide additional support?</h2>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+          </div>
+          <p class="hidden mr-20">Chat and email support is available 24/7. Phone lines are open during normal business
+            hours.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="text-center text-white mt-6">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Nospiel-code">Thomas Schütz</a>.
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
