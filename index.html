@@ -14,81 +14,121 @@
 
 </head>
 
-<body class="relative h-screen grid content-center py-160 px-12 bg-gradient-to-b from-softViolet to-softBlue bg-cover">
+<body class="h-screen flex flex-col justify-center items-center overflow-y-hidden bg-gradient-to-b from-softViolet to-softBlue bg-cover bg-no-repeat">
 
-  <!-- Box -->
-  <div class="absolute transform left-1/2 top-1/2 -translate-x-144 -translate-y-1/2 z-10">
-    <img class="hidden md:block" src="./images/illustration-box-desktop.svg" alt="box illustration">
-  </div>
   <!-- Card -->
-  <div
-    class="flex relative flex-col px-6 mx-auto max-w-lg rounded-3xl bg-white md:overflow-hidden md:h-160 md:pr-8 md:px-0 md:my-24 md:max-w-4xl md:flex-row">
+  <main class="flex flex-col items-center justify-center my-auto w-[20.625rem] rounded-3xl z-10 shadow-2xl shadow-veryDarkGrayishBlue/50 bg-white md:flex-row md:w-[57.5rem] md:min-h-[31.875rem]">
+    
     <!-- Images -->
+    <section class="flex md:flex-1 md:h-full">
+      <div class="mobile translate-y-[-38%] px-3 -mb-52 md:hidden">
+        <img
+          class="max-h-full"
+          src="./images/illustration-woman-online-mobile.svg"
+          alt="illustration of a woman using a computer"
+          />
+        <img
+          class="translate-y-[-70%]"
+          src="./images/bg-pattern-mobile.svg"
+          alt="shadow for the ilustration"
+        />
+      </div>
+      <div class="desktop hidden md:flex md:w-full md:h-full relative">
+        <img
+          class="absolute top-48 -left-24 animate-slidex"
+          src="./images/illustration-box-desktop.svg"
+          alt="a right-to-left sliding box @ on it"
+        />
+      </div>
+    </section>
 
-
-    <div class="imageContainer pb-56 flex-1 md:flex md:flex-col md:justify-center md:items-center md:-translate-x-16">
-      <img class="absolute block left-1/2 -translate-x-1/2 -mt-24 md:hidden" src="./images/illustration-woman-online-mobile.svg"
-        alt="illustration woman">
-      <img class="hidden md:block md:w-full md:max-w-md md:h-auto" src="./images/illustration-woman-online-desktop.svg"
-        alt="illustration woman">
-    </div>
-
-    <!-- Container Heading and Questions -->
-    <div class="flex-1 md:pr-8 md:flex md:flex-col md:justify-center">
+    <!-- Section Heading and Questions -->
+    <section class="w-full px-6 py-12 md:flex-1 md:pt-7">
       <!-- Heading -->
-      <h1 class="text-center text-5xl font-bold tracking-tight pb-12 pt-16 md:text-left">FAQ</h1>
+        <div class="text-center mb-2 md:mb-4 md:text-left">
+          <h1 class="text-[2.125rem] tracking-tight font-bold text-veryDarkDesaturatedBlue">
+            FAQ
+          </h1>
+        </div>
       <!-- Accordion -->
-      <div class="space-y-6">
-        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
-          <div class="flex justify-between items-center pr-3">
-            <h2 class="pb-2 pr-8 cursor-pointer text-lg hover:text-softRed">How many team members can I invite?</h2>
-            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+      <div class="details-group flex flex-col justify-center items-start text-veryDarkGrayishBlue text-[.813rem] w-[17.625rem] md:w-[21.875]">
+
+        <details class="w-full border-b border-light-grayish-blue relative details">
+          <summary class="details-summary list-none cursor-pointer py-4 tracking-wide hover:text-softRed hover:duration-300 duration-300 after:content-[url('./../images/icon-arrow-down.svg')] after:right-0 after:absolute after:text-veryDarkGrayishBlue">
+            How many team members can I invite?
+          </summary>
+          <div class="details-content -mt-2">
+            <p class="text-dark-grayish-blue text-[.75rem] w-[90%]">
+              You can invite up to 2 additional users on the
+              Free plan. There is no limit on team members for
+              the Premium plan.
+            </p>
           </div>
-          <p class="hidden mr-20">You can invite up to 2 additional users on the Free plan. There is no limit on
-            team members for the Premium plan.</p>
-        </div>
-        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
-          <div class="flex justify-between items-center pr-3">
-            <h2 class="pb-2 cursor-pointer text-lg hover:text-softRed">What is the maximum file upload size?</h2>
-            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+        </details>
+
+        <details class="w-full border-b border-light-grayish-blue relative details">
+          <summary class="details-summary list-none cursor-pointer py-4 tracking-wide hover:text-softRed hover:duration-300 duration-300 after:content-[url('./../images/icon-arrow-down.svg')] after:right-0 after:absolute after:text-veryDarkGrayishBlue">
+            What is the maximum file upload size?
+          </summary>
+          <div class="details-content -mt-2">
+            <p class="text-dark-grayish-blue text-[.75rem] w-[90%]">
+              No more than 2GB. All files in your account 
+              must fit your allotted storage space.
+            </p>
           </div>
-          <p class="hidden mr-20">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-        </div>
-        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
-          <div class="flex justify-between items-center pr-3">
-            <h2 class="pb-2 cursor-pointer text-lg hover:text-softRed">How do I reset my password?</h2>
-            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+        </details>
+
+        <details class="w-full border-b border-light-grayish-blue relative details">
+          <summary class="details-summary list-none cursor-pointer py-4 tracking-wide hover:text-softRed hover:duration-300 duration-300 after:content-[url('./../images/icon-arrow-down.svg')] after:right-0 after:absolute after:text-veryDarkGrayishBlue">
+            How do I reset my password?
+          </summary>
+          <div class="details-content -mt-2">
+            <p class="text-dark-grayish-blue text-[.75rem] w-[90%]">
+              Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
           </div>
-          <p class="hidden mr-20">Click “Forgot password” from the login page or “Change password” from your profile
-            page.
-            A reset link will be emailed to you.</p>
-        </div>
-        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
-          <div class="flex justify-between items-center pr-3">
-            <h2 class="pb-2 cursor-pointer text-lg hover:text-softRed">Can I cancel my subscription?</h2>
-            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+        </details>
+
+        <details class="w-full border-b border-light-grayish-blue relative details">
+          <summary class="details-summary list-none cursor-pointer py-4 tracking-wide hover:text-softRed hover:duration-300 duration-300 after:content-[url('./../images/icon-arrow-down.svg')] after:right-0 after:absolute after:text-veryDarkGrayishBlue">
+            Can I cancel my subscription?
+          </summary>
+          <div class="details-content -mt-2">
+            <p class="text-dark-grayish-blue text-[.75rem] w-[90%]">
+              Yes! Send us a message and we'll 
+              process your request no questions asked.
+            </p>
           </div>
-          <p class="hidden mr-20">Yes! Send us a message and we'll process your request no questions asked.</p>
-        </div>
-        <div class="accordion border-b-2 border-lightGrayishBlue pb-5">
-          <div class="flex justify-between items-center pr-3">
-            <h2 class="pb-2 cursor-pointer text-lg hover:text-softRed">Do you provide additional support?</h2>
-            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+        </details>
+
+        <details class="w-full border-b border-light-grayish-blue relative details">
+          <summary class="details-summary list-none cursor-pointer py-4 tracking-wide hover:text-softRed hover:duration-300 duration-300 after:content-[url('./../images/icon-arrow-down.svg')] after:right-0 after:absolute after:text-veryDarkGrayishBlue">
+            Do you provide additional support?
+          </summary>
+          <div class="details-content -mt-2">
+            <p class="text-dark-grayish-blue text-[.75rem] w-[90%]">
+              Chat and email support is available 24/7. 
+              Phone lines are open during normal business hours.
+            </p>
           </div>
-          <p class="hidden mr-20">Chat and email support is available 24/7. Phone lines are open during normal business
-            hours.</p>
-        </div>
+        </details>
+
       </div>
 
+    </section>
+
+
+  </main>
+
+  <footer class="z-0">
+     <div class="text-center text-white mt-6">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Nospiel-code">Thomas Schütz</a>.
     </div>
+  </footer>
 
-  </div>
-
-
-  <div class="text-center text-white mt-6">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/Nospiel-code">Thomas Schütz</a>.
-  </div>
+ 
 
   <script src="js/script.js"></script>
 </body>

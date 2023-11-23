@@ -10,7 +10,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
+  - [What I have learned](#what-i-have-learned)
 - [Author](#author)
 
 
@@ -45,9 +45,17 @@ Users should be able to:
 - JavaScript
 - TailwindCSS
 
-### Continued development
+### What I have learned
 
-After uploading this solution I will search for other Tailwind solutions online and improve this one
+I used this [solution](https://github.com/M-its/faq-accordion-card/tree/main) to completely change my solution.
+Going through this code I learned about:
+- **Details and Summary elements**
+- That it is possible to use custom values in Tailwind using []
+- How to use **animation** with CSS
+- That is possible to use two images at once for the **background-image**
+- How to make an **accordion** using JavaScript:
+
+
 
 ## Author
 

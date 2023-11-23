@@ -15,19 +15,18 @@ module.exports = {
         darkGrayishBlue: "hsl(240, 6%, 50%)",
         lightGrayishBlue: "hsl(240, 5%, 91%)"
       },
-      spacing: {
-        '9.5': '2.375rem',
-        15: '3.75rem',
-        26: '6.5rem',
-        84: '21rem',
-        118: '29.5rem',
-        128: '32rem',
-        144: '36rem',
-        160: '40rem'
+
+      keyframes: {
+        slidex: {
+          "0%, 100%": { transform: "translateX(-20%)" },
+          "50%": { transform: "translateX(0)" },
+        },
       },
-      maxWidth: {
-        xs: '28rem'
-      }
+
+      animation: {
+        slidex: "slidex 3s ease-in-out infinite",
+      },
+
     },
   },
   plugins: [],
